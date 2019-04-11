@@ -7,9 +7,9 @@ app = Flask(__name__)
 #default page -> need to insert name of webpage before slash
 @app.route("/")
 
-#function will be activated after the user goes to the page
+#function opens home.html in browser
 def home():
-    return "Welcome to Foundations!"
+    return render_template("home.html")
 
 #if you add "/Vicktoria" after localhost:5000 it will display this: 
 @app.route("/Vicktoria")
